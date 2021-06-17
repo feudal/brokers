@@ -437,7 +437,7 @@
       height: 30px;
       background: url(../img/icons/scroll-min.svg);
       position: absolute;
-      bottom: 15px;
+      bottom: 45px;
       left: calc(50% - 20px);
     }
   }
@@ -537,6 +537,9 @@
 
     &__title {
       margin: 10px 0 10px;
+    }
+    &__button {
+      display: block;
     }
 
     &__logo {

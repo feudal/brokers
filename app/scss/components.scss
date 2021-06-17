@@ -184,6 +184,9 @@
   &--no-border {
     border: none;
   }
+  &__button {
+    display: none;
+  }
 
   &__closer {
     cursor: pointer;

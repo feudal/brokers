@@ -325,5 +325,15 @@ chooseBall();
     chooseBall();
   }
   //----------------------------------------aside-form-move--------------------------------------//
+//----------------------------------------fancy-box-no-grab--------------------------------------//
+
+  // $.fancybox.open({
+  //   src: "#authorisation-form",
+  //   type: "inline",
+  //   clickSlide : 'false',
+  //   clickOutside : 'false',
+  //   "touch":false 
+  // });
+//----------------------------------------fancy-box-no-grab--------------------------------------//
 
 });
