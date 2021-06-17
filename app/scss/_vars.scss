@@ -1,0 +1,27 @@
+// %title-font {
+// 	font-family: 'Montserrat', sans-serif;
+// 	font-weight: 700;
+// }
+
+//for fancy-box
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
+
+
+$orange: #E07900;
+$light-red: #E95C62;
+$main-red: #E2262D;
+$dark-red: #740A16;
+$red-gradient: linear-gradient(114.49deg, #922333 11.21%, #B82533 96.88%);
+$light-grey: #F9F9F9;
+$middle-grey: #E5E5E5;
+$grey: #C4C4C4;
+$dark-grey: #787878;
+$yellow: #FDCC0D;
+$blue-link: #3366BB;
+$green: #2AC012;

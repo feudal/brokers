@@ -1,0 +1,1241 @@
+/***--------------------menu-----------------*****/
+.menu-burger {
+  display: block;
+  position: fixed;
+  z-index: 200;
+  top: 101px;
+  right: 0;
+  background: #fff;
+  transform: translateX(120%);
+  transition: all .3s;
+  display: none;
+  width: 320px;
+  height: 100vh;
+  border: 1px solid $middle-grey;
+  box-shadow: -1px 3px 2px 1px $dark-grey;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+
+  &__wrapper {
+    padding: 30px;
+
+    & a {
+      width: 100%;
+      height: 40px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid $middle-grey;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      font-size: 12px;
+      background: $main-red;
+      color: #fff;
+    }
+  }
+}
+
+.button {
+  &--red {}
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .top-bar {
+    &__inner {}
+  }
+
+  .container {}
+
+  .logo {}
+
+  .menu {
+    &__link {
+      padding: 0 15px;
+    }
+  }
+
+  .list {
+    &__link {
+      margin: 0 5px;
+
+      &--notification {}
+
+      &--comparation {}
+
+      &--login {}
+
+      &--profile {}
+
+      &--search {}
+    }
+
+    &__link-count {}
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-bar {
+    &__inner {}
+  }
+
+  .container {}
+
+  .logo {}
+
+  .menu {
+    &__link {
+      display: none;
+    }
+  }
+
+  .list {
+    &__link {
+      display: none;
+
+      &--notification {}
+
+      &--comparation {}
+
+      &--login {}
+
+      &--profile {}
+
+      &--search {
+        display: block;
+      }
+
+      &--burger {
+        display: block;
+      }
+    }
+
+    &__link-count {}
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .top-bar {
+    &__inner {
+      height: 70px;
+    }
+
+    & .logo {
+      height: 40px;
+    }
+  }
+
+  .menu-burger {
+    top: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------menu-----------------*****/
+
+/*****--------------------footer-----------------*****/
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+
+    &__inner {}
+  }
+
+  .container {}
+
+  .column {
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+    &__title {}
+
+    &__paragraph {}
+
+    &__mail-link {}
+
+    &__list {}
+
+    &__link {}
+  }
+
+  .column-social {}
+
+  .column-icon {}
+
+  .footer-form {
+    height: 40px;
+
+    &__input {
+      height: 40px;
+      width: 90%;
+    }
+
+    &__btn {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+  .footer {
+    &__inner {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .container {}
+
+  .column {
+    width: 100%;
+
+    &__title {}
+
+    &__paragraph {}
+
+    &__mail-link {}
+
+    &__list {}
+
+    &__link {}
+  }
+
+  .column-social {}
+
+  .column-icon {}
+
+  .footer-form {
+
+    &__input {}
+
+    &__btn {}
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    &__inner {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------footer-----------------***/
+
+/*****--------------------sliders-index-----------------*****/
+.investition__list,
+.kpk__list,
+.broker__list {
+  & div li {
+    padding: 0 10px 0;
+  }
+
+  & .slick-list {
+    margin: 0 -10px 0;
+  }
+
+
+  & .slick-arrow {
+    cursor: pointer;
+    display: block;
+    width: 33px;
+    height: 25px;
+    border: none;
+
+    position: absolute;
+    bottom: -67px;
+    font-size: 0;
+  }
+
+  & .slick-next {
+    background: url(../img/icons/slider-right-arrow-grey.svg) no-repeat center center;
+    background-size: content;
+    left: calc(50% + 120px);
+  }
+
+  & .slick-prev {
+    background: url(../img/icons/slider-right-arrow-grey.svg) no-repeat center center;
+    background-size: content;
+    transform: rotate(180deg);
+    left: calc(50% - 145px);
+  }
+
+  & .slick-dots {
+    position: absolute;
+    bottom: -108px;
+    left: calc(50% - 97px);
+    height: 108px;
+    width: 194px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & li {
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    & button {
+      cursor: pointer;
+      align-self: center;
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      border: none;
+      border-radius: 50%;
+      background: $middle-grey;
+      margin: 0 10px;
+      transition: all .3s;
+
+      &:hover {
+        background-color: $main-red;
+      }
+    }
+  }
+
+  & .slick-active button {
+    width: 25px;
+    height: 25px;
+    background-color: $main-red;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .investition__list,
+  .kpk__list,
+  .broker__list {
+    margin: 0 -10px 0;
+    position: relative;
+    margin-bottom: 128px;
+    border: none;
+  }
+}
+
+/*****--------------------main-screen-----------------*****/
+
+@media only screen and (max-width: 1024px) {
+  .main-screen {
+    &__inner {}
+
+    &__title {
+      font-size: 64px;
+      line-height: 80px;
+    }
+
+    &__subtitle {}
+
+    &__search-form {
+      width: 80%;
+    }
+
+    &__scroll-icon {}
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .main-screen {
+    &__inner {}
+
+    &__title {
+      font-size: 58px;
+      line-height: 70px;
+    }
+
+    &__subtitle {}
+
+    &__search-form {
+      width: 100%;
+    }
+
+    &__scroll-icon {}
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-screen {
+    &__inner {}
+
+    &__title {
+      font-size: 38px;
+      line-height: 44px;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &__search-form {
+      width: 100%;
+      height: 60px;
+    }
+
+    &__scroll-icon {}
+  }
+
+  .search-form__submit {
+    transform: scale(.75);
+    position: relative;
+    right: -10px;
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  .main-screen {
+    &__inner {}
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__search-form {
+      width: 100%;
+      height: 40px;
+    }
+
+    &__scroll-icon {
+      width: 30px;
+      height: 30px;
+      background: url(../img/icons/scroll-min.svg);
+      position: absolute;
+      bottom: 15px;
+      left: calc(50% - 20px);
+    }
+  }
+
+  .search-form__submit {
+    transform: scale(.5);
+    position: relative;
+    right: -20px;
+  }
+
+  .search-form__input {
+    margin: 15px;
+  }
+}
+
+
+/*****--------------------main-screen-----------------*****/
+
+/*****--------------------sliders-index-----------------*****/
+/*****--------------------catalog-----------------*****/
+
+@media only screen and (max-width: 1024px) {
+  .aside {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .aside {
+    position: absolute;
+    top: 101px;
+    left: 0;
+    display: none;
+    transition: all .3s;
+    transform: translateX(-120%);
+
+    z-index: 200;
+    background: #fff;
+    height: 100vh;
+    width: 320px;
+    border: 1px solid $middle-grey;
+    box-shadow: 1px 3px 2px 2px $dark-grey;
+  }
+
+  .filters__block {
+    padding: 20px;
+  }
+
+  .filters__title {
+    display: none;
+  }
+
+  .catalog .catalog__filters-count {
+    display: none;
+  }
+
+  .list__link--filter {
+    display: block;
+  }
+
+  .aside.active {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 640px) {
+  .catalog__filters-title {
+    display: none;
+  }
+
+  .aside {
+    position: absolute;
+    top: 71px;
+  }
+
+  .company-card__compare {
+    display: none;
+  }
+
+  .company-card__verified {
+    right: 10px;
+    left: auto;
+
+  }
+
+  .catalog__wrapper {
+    margin-right: -15px;
+  }
+
+  .company-card {
+    flex: 40% 1 0;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+    &__title {
+      margin: 10px 0 10px;
+    }
+
+    &__logo {
+      & svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .filters__closer {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/closer.svg) no-repeat center center;
+
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .company-card__logo {
+    max-height: 60px;
+    max-width: 100px;
+  }
+
+  .pagination :nth-child(5) {
+    display: none;
+  }
+
+  .star {
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  .aside {
+    width: 100%;
+    position: fixed;
+  }
+
+  .menu-burger {
+    position: fixed;
+    width: 100%;
+  }
+
+}
+
+/*****--------------------catalog-----------------*****/
+
+/*****--------------------company-----------------*****/
+
+@media only screen and (max-width: 480px) {
+  .comment {
+    flex-direction: column;
+
+    &__wrapper {}
+
+    &__user {
+      border: none;
+    }
+
+    &__content {
+      border-top: 1px solid $middle-grey;
+    }
+
+    &__content-text {}
+
+    &__content-info {
+      margin-top: 15px;
+
+    }
+  }
+
+  .comment-respond {
+    margin: 0 0 20px 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -30px;
+      width: 15px;
+      height: 15px;
+
+      border-bottom: 3px solid $middle-grey;
+      border-left: 3px solid $middle-grey;
+      border-radius: 3px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .company-card-sm {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__wrapper {
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__info {
+      display: none;
+    }
+  }
+
+  .aside2 {
+    width: 30%;
+  }
+
+  .list-info__title {
+    padding: 12px 30px;
+  }
+
+  .instruments {
+    width: 50%;
+
+    &__title {
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: right;
+      margin-bottom: 20px;
+      color: $dark-grey;
+    }
+
+    &__item {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aside2 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+
+    &__form {
+      // display: none;
+    }
+  }
+
+  .details {
+    margin-left: 0;
+  }
+
+  .company-card-sm {
+    width: 100%;
+
+    &__wrapper {
+      align-items: center;
+      margin: 20px 0 0;
+    }
+
+    &__logo {
+      width: 400px;
+    }
+
+    &__info {
+      display: none;
+    }
+  }
+
+  .main__wrapper {
+    flex-direction: column;
+  }
+
+  .line-raiting {
+    width: 100%;
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .instruments {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    &__title {
+      display: none;
+    }
+  }
+
+  .button--red {
+    margin-right: auto;
+  }
+
+  .instruments {
+
+    background: $light-grey;
+    padding: 15px;
+    border: 1px solid $middle-grey;
+    border-left: none;
+    border-right: none;
+
+    position: absolute;
+    left: -15px;
+    width: 100vw;
+
+    &__fixer {
+      position: relative;
+      width: 100px;
+      height: 80px;
+    }
+
+    &__item {
+      background: #fff;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .company-card-sm {
+    &__logo {
+      width: 100%;
+    }
+  }
+
+  .breadcrumbs {
+    height: 0;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+  .main__title {
+    margin-bottom: 15px;
+  }
+
+  .list-info__title {
+    margin-right: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .list-info {
+    margin-top: 0;
+  }
+
+  .list-info__title {
+    display: none;
+  }
+
+  .list-info__text {
+    padding: 0;
+    border: none;
+  }
+
+  .list-info__sort {
+    display: block;
+  }
+
+  .catalog__filters {
+    width: 100%;
+    margin: 15px 0;
+
+    &-order {
+      width: 100%;
+    }
+
+    & .select {
+      width: 100%;
+    }
+  }
+
+  .line {
+    width: 100vw;
+    border-radius: 0;
+    position: relative;
+    left: -15px;
+  }
+
+  .aside2__wrapper {
+    border: none;
+    padding: 30px 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background: $middle-grey;
+      left: -15px;
+      top: -20px;
+      width: 100vw;
+    }
+
+  }
+}
+
+/*****--------------------company-----------------*****/
+
+
+/*****--------------------profile-----------------*****/
+.main {
+  &__title {}
+
+  &__wrapper {}
+}
+
+.aside3 {
+  &__title {}
+
+  &__line {}
+
+  &__list {}
+
+  &__list-item {}
+
+  &__item-title {
+    &--blue {}
+  }
+}
+
+.profile {
+  &__wrapper {}
+
+  &__logo {}
+
+  &__info {}
+
+  &__name {}
+
+  &__email {}
+
+  &__edit {}
+
+  &__password {}
+}
+
+@media only screen and (max-width: 1024px) {
+  .profile {
+    flex-direction: column;
+    height: auto;
+
+    &__wrapper {
+      &--border {
+        border-top: 1px solid $middle-grey;
+        margin-top: 20px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aside3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .main__title {
+    font-size: 24px;
+    line-height: 28px;
+
+  }
+
+  .profile {
+    &__edit {
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &__password {
+      margin-left: 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------profile-----------------*****/
+
+/*****--------------------favorites-----------------*****/
+@media only screen and (max-width: 640px) {
+  .company-card__closer {
+    display: none;
+  }
+
+}
+
+/*****-------------------- favorites-----------------*****/
+
+/*****--------------------reviews-mobile-----------------*****/
+.mobile-review {
+  display: none;
+  padding: 16px;
+  border: 1px solid $middle-grey;
+  margin-bottom: 15px;
+  position: relative;
+
+  &__wrapper {}
+
+  &__close {
+    cursor: pointer;
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: url(../img/icons/closer.svg) no-repeat center center;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+
+  &__comment {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark-grey;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $green;
+
+    &--red {
+      color: $main-red;
+    }
+
+    &--orange {
+      color: $orange;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .aside3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .table__wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .table {
+    display: none;
+  }
+
+  .mobile-review {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------reviews-mobile-----------------*****/
+
+/*****--------------------profile-owner-company-----------------*****/
+
+
+@media only screen and (max-width: 768px) {
+  .owner-company__wrapper--column {
+    flex-direction: column;
+  }
+
+  .owner-company {
+    // flex-direction: column;
+    align-items: start;
+
+    &__info {}
+
+    &__name {}
+
+    &__reviews {}
+
+    &__link {}
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__button {
+      margin-bottom: 10px;
+      margin-right: 20px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &__logo {}
+  }
+
+  .company-card {
+    &__raiting {}
+  }
+
+  .star {
+    &--yellow {}
+  }
+
+  .button {
+    &--white {}
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .owner-company {
+    flex-direction: column;
+    width: 100%;
+
+    &__wrapper {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button {
+      margin: 0;
+      width: 80%;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .owner-company {
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
+/*****--------------------profile-owner-company-----------------*****/
+
+/*****--------------------reviews-your-companies-----------------*****/
+
+
+@media only screen and (max-width: 768px) {
+  .review {
+    &__user {
+      flex-direction: column;
+    }
+
+    &__list-item {
+      margin-top: 10px;
+    }
+  }
+
+  .searching-block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20% 20px 20%;
+    position: relative;
+    border: none;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -15px;
+      width: 100vw;
+      height: 100%;
+      background: $light-grey;
+      border-top: 1px solid $middle-grey;
+      border-bottom: 1px solid $middle-grey;
+
+    }
+  }
+
+  .catalog {
+    &__filters-order {
+      width: 100%;
+    }
+
+    &__filters-title {
+      display: none;
+    }
+  }
+
+  .select {
+    background: #fff;
+    width: 100%;
+    margin-bottom: 15px;
+
+    &__option {}
+  }
+
+  .search {
+    margin-left: 0;
+    flex-direction: column;
+
+    &__wrapper {}
+
+    &__input {}
+
+    &__btn {
+      text-align: center;
+    }
+
+    &__btn-red {
+      margin-top: 15px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .review {
+    &__list {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .review {
+    &__content-info {
+      flex-direction: column;
+    }
+
+    &__content-likes {
+      align-items: start;
+      justify-content: start;
+    }
+
+    &__btn-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0 0;
+    }
+  }
+
+  .review__btn {
+    margin: 0;
+  }
+
+  & .star {
+    margin-right: 5px;
+  }
+
+  .searching-block {
+    padding: 20px 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------reviews-your-companies-----------------*****/

@@ -1,0 +1,57 @@
+/*****--------------------my_reset-----------------*****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+input, textarea {
+  border-style:solid;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent ;
+}
+/*****--------------------my_reset-----------------*****/
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  flex-grow: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-grow: 0;
+}

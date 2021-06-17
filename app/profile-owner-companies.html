@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Brokers</title>
+</head>
+
+<body>
+    <div class="menu-burger">
+    <li><a href="" class="menu-burger__link">Брокеры</a></li>
+    <li><a href="" class="menu-burger__link">КПК</a></li>
+    <li><a href="" class="menu-burger__link">Инвестиционные компании</a></li>
+    <li><a href="" class="menu-burger__link">Уведомелния <span>2</span></a></li>
+    <li><a href="compare.html" class="menu-burger__link">Сравнение <span>4</span></a></li>
+    <li class="menu-burger__wrapper"><a data-fancybox data-src="#authorisation-form" href="javascript:;" class="button button--red">Авторизация</a></li>
+  </div>
+  <!--                         top-bar                         -->
+  <header class="top-bar">
+    <div class="container">
+      <div class="top-bar__inner">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <ul class="menu">
+          <li><a href="" class="menu__link">Брокеры</a></li>
+          <li><a href="" class="menu__link">КПК</a></li>
+          <li><a href="" class="menu__link">Инвестиционные компании</a></li>
+        </ul>
+        <ul class="list">
+          <li><a href="" class="list__link list__link--notification"><span class="list__link-count">2</span></a></li>
+          <li><a href="compare.html" class="list__link list__link--comparation"><span class="list__link-count">4</span></a></li>
+          <li><a data-fancybox data-src="#authorisation-form" href="javascript:;" class="list__link list__link--login">Авторизация</a></li>
+          <li><a href="profile-owner.html" class="list__link list__link--profile"></a></li>
+          <li><a href="" class="list__link list__link--search"></a></li>
+          <li><a class="list__link list__link--burger"></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--                         top-bar                         -->
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <div class="breadcrumbs__middle"></div>
+        <span href="index.html" class="breadcrumbs__link breadcrumbs__link--red">Личный кабинет</span>
+      </div>
+      <!--                         breadcrumbs                         -->
+      <h2 class="main__title">Личный кабинет</h2>
+      <div class="main__wrapper">
+        <aside class="aside3">
+          <h3 class="aside3__title">Меню</h3>
+          <div class="aside3__line"></div>
+          <ul class="aside3__list">
+            <li class="aside3__list-item">
+              <a href="profile-owner.html" class="aside3__item-title aside3__item-title--blue">Личные данные</a><span></span>
+            </li>
+            <li class="aside3__list-item">
+              <a href="compare.html" class="aside3__item-title">Сравнение</a>
+              <span>4</span>
+            </li>
+            <li class="aside3__list-item">
+              <a href="favorites.html" class="aside3__item-title">Избранное</a>
+              <span>27</span>
+            </li>
+            <li class="aside3__list-item">
+              <a href="reviews.html" class="aside3__item-title">Отзывы</a>
+              <span>12</span>
+            </li>
+          </ul>
+          <div class="aside3__line"></div>
+          <ul class="aside3__list">
+            <li class="aside3__list-item">
+              <a href="profile-owner-companies.html" class="aside3__item-title">Ваши компании</a>
+              <span>2</span>
+            </li>
+            <li class="aside3__list-item">
+              <a href="reviews-your-companies.html" class="aside3__item-title">Отзывы в ваших компаниях</a>
+              <span>27</span>
+            </li>
+          </ul>
+          <div class="aside3__line"></div>
+          <a href="" class="aside3__item-title">Выйти</a>
+        </aside>
+        <div class="main__wrapper main__wrapper--wrap">
+          <div class="owner-company">
+            <div class="owner-company__wrapper">
+              <div class="owner-company__logo">
+                <svg width="142" height="105" viewBox="0 0 142 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M122.24 60.2939C117.276 60.3216 112.976 61.4979 109.371 63.2493C108.039 60.6499 106.708 58.3786 106.486 56.6825C106.237 54.7124 105.931 53.5083 106.237 51.1554C106.541 48.8021 107.928 45.4639 107.928 45.1903C107.9 44.9441 107.623 43.7402 104.766 43.7128C101.91 43.6854 99.4408 44.26 99.1634 44.9988C98.886 45.7376 98.3313 47.434 97.9707 49.1851C97.4715 51.7571 92.2569 60.8685 89.2891 65.6568C88.3183 63.7962 87.4862 62.1545 87.3195 60.8409C87.0702 58.8711 86.7648 57.667 87.0702 55.3141C87.3753 52.9608 88.7621 49.6229 88.7621 49.3493C88.7344 49.103 88.457 47.8991 85.6004 47.8718C82.7432 47.8444 80.2749 48.419 79.9975 49.1578C79.7202 49.8965 79.4151 51.6477 78.8049 53.3441C78.2221 55.0405 71.2879 70.2536 69.485 74.221C68.5697 76.2458 67.7656 77.8601 67.1829 78.9546C66.6004 80.0491 67.1551 79.0367 67.0997 79.1461C66.6004 80.0764 66.323 80.5963 66.323 80.5963V80.6239C65.9347 81.308 65.5187 81.9644 65.3242 81.9644C65.1855 81.9644 64.9082 80.1311 65.3797 77.6141C66.406 72.3331 68.9023 64.0975 68.8748 63.7965C68.8748 63.6597 69.3461 62.2093 67.2658 61.4708C65.241 60.732 64.5201 61.9633 64.3534 61.9633C64.187 61.9633 64.0483 62.4011 64.0483 62.4011C64.0483 62.4011 66.295 53.1257 59.7491 53.1257C55.6441 53.1257 49.9858 57.531 47.1844 61.5531C45.4092 62.5108 41.637 64.5353 37.6429 66.6971C36.1174 67.518 34.5364 68.3935 33.0386 69.187L32.7338 68.8581C24.801 60.5128 10.1283 54.6027 10.7385 43.3845C10.9604 39.3076 12.4027 28.5544 38.9193 15.5303C60.6373 4.85926 78.0282 7.78696 81.0513 14.299C85.3505 23.602 71.7594 40.8945 49.182 43.3845C40.5836 44.3421 36.0622 41.0587 34.9253 39.8274C33.7326 38.5414 33.5661 38.4867 33.1224 38.733C32.4012 39.116 32.845 40.2652 33.1224 40.9493C33.788 42.673 36.5617 45.7376 41.277 47.2698C45.4095 48.6105 55.506 49.3493 67.7101 44.6978C81.3844 39.4717 92.0631 24.9701 88.9288 12.8489C85.7391 0.508761 64.9919 -3.54076 45.382 3.32701C33.7046 7.43126 21.0566 13.8339 11.9589 22.2339C1.14155 32.1935 -0.578128 40.8945 0.143029 44.5063C2.66735 57.3936 20.6683 65.7936 27.8798 72.0047C27.5192 72.196 27.1864 72.3875 26.8813 72.552C23.2755 74.3028 9.5458 81.3898 6.10644 88.8866C2.22329 97.3687 6.71665 103.471 9.71222 104.291C18.9763 106.836 28.4623 102.267 33.5936 94.7423C38.6969 87.2178 38.087 77.4497 35.7293 72.9898L35.6459 72.8256L38.475 71.1839C40.3059 70.1168 42.1088 69.1318 43.6895 68.2833C42.8022 70.6637 42.164 73.482 41.8314 77.5862C41.4431 82.4022 43.4402 88.6403 46.0752 91.1029C47.2401 92.1697 48.627 92.1974 49.4868 92.1974C52.5378 92.1974 53.9247 89.7072 55.4502 86.725C57.3363 83.0859 59.0005 78.8722 59.0005 78.8722C59.0005 78.8722 56.9203 90.282 62.6063 90.282C64.6866 90.282 66.7668 87.628 67.7099 86.2599V86.2872C67.7099 86.2872 67.7653 86.2052 67.8763 86.0136C67.9927 85.8439 68.1037 85.6706 68.2091 85.494V85.4393C69.0412 84.0165 70.8996 80.7605 73.6733 75.3702C77.251 68.4204 80.6907 59.7194 80.6907 59.7194C80.6907 59.7194 81.0235 61.8536 82.0498 65.3559C82.6597 67.4356 83.9911 69.7064 85.0173 71.9227C84.1852 73.0718 83.686 73.7288 83.686 73.7288L83.7137 73.7562C83.0483 74.6317 82.2991 75.5623 81.5228 76.4923C78.6936 79.8304 75.3097 83.634 74.866 84.7284C74.339 86.0142 74.4499 86.9718 75.4762 87.7382C76.2251 88.2855 77.5564 88.3946 78.971 88.2855C81.5228 88.121 83.2979 87.492 84.1855 87.1086C85.5724 86.6161 87.1534 85.8774 88.6789 84.7829C91.4526 82.7584 93.1445 79.8854 92.9781 76.0548C92.8949 73.948 92.2015 71.8685 91.3416 69.8984C91.5913 69.5427 91.8412 69.1868 92.0905 68.804C96.4729 62.4832 99.8568 55.5336 99.8568 55.5336C99.8568 55.5336 100.19 57.6678 101.216 61.1701C101.743 62.9486 102.797 64.8915 103.74 66.8068C99.6349 70.1176 97.0554 73.9482 96.1678 76.4655C94.5314 81.117 95.8072 83.2238 98.2203 83.7163C99.3018 83.9352 100.855 83.4427 102.02 82.9502C103.462 82.4851 105.21 81.6913 106.819 80.515C109.592 78.4903 112.255 75.672 112.116 71.8688C112.033 70.1176 111.562 68.3938 110.924 66.7521C114.419 65.3293 118.939 64.5085 124.681 65.1925C137.024 66.6153 139.465 74.2218 138.994 77.3958C138.522 80.57 135.943 82.3209 135.083 82.8681C134.223 83.388 133.945 83.5798 134.029 83.9626C134.139 84.5375 134.528 84.5098 135.277 84.4007C136.303 84.2362 141.767 81.8013 141.989 75.9462C142.322 68.4206 135.083 60.2121 122.24 60.2939ZM27.0477 91.9514C22.9704 96.3566 17.2289 98.0257 14.7881 96.6029C12.1531 95.098 13.179 88.6133 18.1997 83.9344C21.2507 81.0888 25.2171 78.4621 27.8244 76.8477C28.4068 76.4921 29.2944 75.9725 30.3484 75.3429C30.5148 75.2337 30.6258 75.1787 30.6258 75.1787C30.8199 75.0692 31.0418 74.9324 31.2637 74.7956C33.1221 81.4719 31.3469 87.3273 27.0477 91.9514ZM56.8648 71.95C55.4502 75.3702 52.4546 84.1533 50.6517 83.6608C49.0982 83.2504 48.1554 76.6015 50.3464 70.0347C51.4558 66.7237 53.8135 62.7839 55.2003 61.2513C57.4473 58.7888 59.8878 57.9679 60.4983 58.9803C61.2195 60.2939 57.7524 69.8158 56.8648 71.95ZM81.4673 83.5514C80.8571 83.8526 80.3024 84.0712 80.0527 83.9073C79.8586 83.7979 80.3021 83.3875 80.3021 83.3875C80.3021 83.3875 83.3809 80.1314 84.6013 78.6265C85.2947 77.7512 86.1268 76.7389 87.0144 75.5894V75.9177C87.0147 79.8575 83.187 82.4842 81.4673 83.5514ZM100.439 79.2829C99.9952 78.9546 100.051 77.9422 101.548 74.7683C102.131 73.5096 103.462 71.4028 105.764 69.4054C106.042 70.2262 106.209 71.0194 106.181 71.7585C106.153 76.6836 102.603 78.5168 100.439 79.2829Z" fill="#C4C4C4" />
+                </svg>
+              </div>
+              <div class="owner-company__info">
+                <a href="" class="owner-company__name">ABC Group</a>
+                <div data-val='3' class="company-card__raiting">
+                  <span data-id='1' class="star star--yellow"></span>
+                  <span data-id='2' class="star star--yellow"></span>
+                  <span data-id='3' class="star star--yellow"></span>
+                  <span data-id='4' class="star"></span>
+                  <span data-id='5' class="star"></span>
+                </div>
+                <div class="owner-company__reviews">Всего: <a href="" class="owner-company__link">23</a> отзывов</div>
+              </div>
+            </div>
+            <div class="owner-company__wrapper owner-company__wrapper--column">
+              <button data-fancybox data-src="#edit-form" href="javascript:;" class="owner-company__button button button--white">Редактировать</button>
+              <button data-fancybox data-src="#review-form" href="javascript:;" class="owner-company__button button button--white">Написать отзыв</button>
+            </div>
+          </div>
+          <div class="owner-company">
+            <div class="owner-company__wrapper ">
+              <div class="owner-company__logo">
+                <svg width="154" height="105" viewBox="0 0 154 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M152.742 49.0606C151.648 47.9669 137.613 30.2856 135.243 27.3691C132.691 24.4526 131.597 24.9994 129.957 25.1817C128.316 25.364 110.635 28.4628 108.63 28.645C106.625 29.0096 105.349 29.7387 106.625 31.5616C107.718 33.2021 119.384 49.6074 121.936 53.4354L75.4545 64.5545L38.6335 2.76104C37.1753 0.573664 36.8107 -0.155463 33.5296 0.0268186C30.2485 0.2091 4.5468 2.39648 2.72398 2.39648C0.901166 2.57876 -1.10393 3.30789 0.718884 7.68265C2.5417 12.0574 31.7068 74.7623 32.4359 76.5851C33.1651 78.408 35.3524 81.3245 40.2741 80.2308C45.3779 78.9548 62.877 74.3978 72.5379 71.8458C77.6418 80.9599 87.8496 99.5526 89.8547 102.287C92.4067 105.932 94.2295 105.203 98.0574 104.11C101.156 103.198 145.815 87.1575 147.82 86.2461C149.825 85.3347 151.101 84.7878 149.643 82.7827C148.549 81.3245 136.883 65.466 130.686 57.2633C134.878 56.1696 150.008 52.1594 151.648 51.6125C153.471 51.0657 153.836 50.1543 152.742 49.0606ZM68.3455 66.3774C67.7986 66.5596 41.7323 72.7572 40.4563 73.1218C38.9981 73.4863 38.9981 73.3041 38.9981 72.7572C38.6335 72.2104 8.01016 8.77634 7.46331 8.04721C7.09875 7.31809 7.09875 6.58896 7.46331 6.58896C7.82788 6.58896 32.0714 4.40158 32.8005 4.40158C33.7119 4.40158 33.5296 4.58386 33.8942 5.13071C33.8942 5.13071 67.9809 64.0077 68.5277 64.9191C69.2569 65.8305 68.8923 66.1951 68.3455 66.3774ZM141.623 80.0485C141.987 80.7776 142.534 81.1422 141.076 81.5067C139.8 82.0536 97.146 96.4538 96.2346 96.8184C95.3232 97.183 94.7763 97.3652 93.6826 95.7247C92.5889 94.0842 78.7355 70.2053 78.7355 70.2053L124.124 58.357C125.217 57.9924 125.582 57.8101 126.311 58.9038C127.04 60.1798 141.258 79.5016 141.623 80.0485ZM144.539 47.9669C143.446 48.1492 126.858 52.3417 126.858 52.3417L113.187 33.7489C112.822 33.2021 112.458 32.6552 113.369 32.473C114.28 32.2907 129.774 29.5565 130.504 29.3742C131.233 29.1919 131.78 29.0096 132.691 30.2856C133.602 31.3793 145.268 46.3264 145.815 46.8732C146.362 47.4201 145.633 47.7846 144.539 47.9669Z" fill="#C4C4C4" />
+                </svg>
+              </div>
+              <div class="owner-company__info">
+                <a href="" class="owner-company__name">ABC Group</a>
+                <div data-val='3' class="company-card__raiting">
+                  <span data-id='1' class="star star--yellow"></span>
+                  <span data-id='2' class="star star--yellow"></span>
+                  <span data-id='3' class="star star--yellow"></span>
+                  <span data-id='4' class="star"></span>
+                  <span data-id='5' class="star"></span>
+                </div>
+                <div class="owner-company__reviews">Всего: <a href="" class="owner-company__link">23</a> отзывов</div>
+              </div>
+            </div>
+            <div class="owner-company__wrapper owner-company__wrapper--column">
+              <button data-fancybox data-src="#edit-form" href="javascript:;" class="owner-company__button button button--white">Редактировать</button>
+              <button data-fancybox data-src="#review-form" href="javascript:;" class="owner-company__button button button--white">Написать отзыв</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--                         footer                         -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="column">
+          <h3 class="column__title">Контакты</h3>
+          <p class="column__paragraph">Российская Федерация, Москва, <br>Среднефонтанская, 19В, оф. 204/3</p>
+          <a href="mailto:support@mail.ru" class="column__mail-link">support@mail.ru</a>
+          <ul class="column-social">
+            <li><a href="" class="column-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40 20C40 8.95599 31.044 0 20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C20.1175 40 20.2344 39.9976 20.3516 39.9954V24.4263H16.0547V19.4186H20.3516V15.7336C20.3516 11.46 22.9605 9.13391 26.7728 9.13391C28.5983 9.13391 30.1675 9.27002 30.625 9.33075V13.7973H27.9962C25.9222 13.7973 25.5206 14.783 25.5206 16.2292V19.4186H30.4797L29.8334 24.4263H25.5206V39.2273C33.8803 36.8307 40 29.129 40 20Z" fill="white" fill-opacity="0.25" />
+                </svg>
+              </a></li>
+            <li><a href="" class="column-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.7587 13.7781C20.7587 11.0057 19.1059 6.69434 15.9194 6.69434C14.9177 6.69434 13.8444 7.19439 13.2281 7.96492C12.5742 8.77475 12.3843 9.81086 12.3843 10.8151C12.3843 13.3931 13.8812 17.6656 17.1868 17.6656C18.1464 17.6656 19.1804 17.206 19.7983 16.5894C20.6818 15.701 20.7587 14.4717 20.7587 13.7781Z" fill="white" fill-opacity="0.25" />
+                  <path d="M18.6832 23.9032C18.3771 23.8647 18.1848 23.8647 17.801 23.8647C17.4544 23.8647 15.3793 23.9405 13.7666 24.4831C12.922 24.7891 10.4639 25.714 10.4639 28.447C10.4639 31.1814 13.1147 33.1468 17.2248 33.1468C20.9138 33.1468 22.8735 31.3717 22.8735 28.988C22.8731 27.0185 21.6054 25.9828 18.6832 23.9032Z" fill="white" fill-opacity="0.25" />
+                  <path d="M20 0C8.95427 0 0 8.95427 0 20C0 31.0457 8.95427 40 20 40C31.0457 40 40 31.0457 40 20C40 8.95427 31.0457 0 20 0ZM15.3408 34.7601C9.769 34.7601 7.08133 32.1052 7.08133 29.2542C7.08133 27.8691 7.77166 25.9069 10.0387 24.5586C12.4194 23.0952 15.6485 22.9041 17.3782 22.7851C16.8385 22.0927 16.2259 21.3614 16.2259 20.1682C16.2259 19.5147 16.4182 19.1292 16.6081 18.6668C16.185 18.7061 15.7643 18.7437 15.3796 18.7437C11.3088 18.7437 9.00379 15.7001 9.00379 12.6977C9.00379 10.9291 9.80951 8.96409 11.4611 7.53964C13.652 5.73013 16.6457 5.23908 18.722 5.23908H26.2916L23.7934 6.8088H21.4134C22.2965 7.53964 24.1379 9.07949 24.1379 12.007C24.1379 14.8538 22.5264 16.205 20.9138 17.474C20.4133 17.9736 19.8367 18.5125 19.8367 19.3608C19.8367 20.2058 20.4137 20.6674 20.8352 21.0169L22.2195 22.0923C23.9104 23.5159 25.4474 24.8254 25.4465 27.4844C25.4461 31.1047 21.9478 34.7601 15.3408 34.7601ZM31.9202 19.5294V23.4021H30.019V19.5294H26.1753V17.6074H30.019V13.7584H31.9202V17.6074H35.7823V19.5294H31.9202Z" fill="white" fill-opacity="0.25" />
+                </svg>
+              </a></li>
+            <li><a href="" class="column-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM29.1318 15.5939C29.1406 15.7907 29.1449 15.9885 29.1449 16.1871C29.1449 22.2531 24.5276 29.248 16.0837 29.2484H16.084H16.0837C13.4912 29.2484 11.0788 28.4885 9.04724 27.1863C9.40643 27.2287 9.77203 27.2498 10.1422 27.2498C12.2931 27.2498 14.2725 26.5161 15.8438 25.2847C13.8342 25.2475 12.1399 23.9203 11.5552 22.0963C11.835 22.15 12.1228 22.1793 12.4179 22.1793C12.8369 22.1793 13.2428 22.1228 13.6285 22.0175C11.528 21.597 9.94568 19.7406 9.94568 17.5177C9.94568 17.4969 9.94568 17.4783 9.94629 17.4591C10.5649 17.803 11.2723 18.0099 12.0255 18.0331C10.7928 17.2107 9.9826 15.8047 9.9826 14.212C9.9826 13.371 10.21 12.583 10.6042 11.9046C12.868 14.6823 16.2512 16.5091 20.0665 16.701C19.9878 16.3647 19.9472 16.0144 19.9472 15.6543C19.9472 13.1201 22.0032 11.0641 24.5383 11.0641C25.8588 11.0641 27.0514 11.6223 27.8891 12.5146C28.9349 12.3083 29.917 11.9263 30.8041 11.4005C30.4608 12.4719 29.7333 13.371 28.7854 13.9395C29.7141 13.8284 30.5991 13.5822 31.4215 13.2166C30.8072 14.1373 30.0281 14.946 29.1318 15.5939Z" fill="white" fill-opacity="0.25" />
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="column__title">Категории</h3>
+          <ul class="column__list">
+            <li><a href="catalog.html" class="column__link">Брокеры</a></li>
+            <li><a href="catalog.html" class="column__link">КПК</a></li>
+            <li><a href="catalog.html" class="column__link">Инвестиционные</a></li>
+            <li><a href="catalog.html" class="column__link">Еще какие-то</a></li>
+            <li><a href="catalog.html" class="column__link">Ну разные бывают</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="column__title">Реклама</h3>
+          <ul class="column__list">
+            <li><a href="" class="column__link">География партнерства</a></li>
+            <li><a href="" class="column__link">Почему нас выбирают?</a></li>
+            <li><a href="" class="column__link">Стать партнером</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="column__title">Рассылка</h3>
+          <form class="footer-form">
+            <input type="text" class="footer-form__input" placeholder="Ваш email">
+            <input type="submit" class="footer-form__btn" value="">
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--                         footer                         -->
+  <!--                         contact-form                         -->
+  <form style="display: none;" id="edit-form" class="profile-form profile-form--80p">
+    <h3 class="leave-comment__title">Изменить данные компании</h3>
+    <div class="leave-comment__wrapper">
+      <h3 class="leave-comment__subtitle">URL адрес</h3>
+      <input style="margin-bottom: 0" type="text" class="leave-comment__input leave-comment__input--100" placeholder="">
+    </div>
+    <h3 class="leave-comment__subtitle">Обзор компании</h3>
+    <textarea class="leave-comment__textarea" placeholder='здесь написаны данные компании'></textarea>
+    <h3 class="leave-comment__subtitle">Критерии</h3>
+    <div class="main__wrapper">
+      <ul style="width: 50%">
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <sapn>Русский</sapn>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <sapn>Английский</sapn>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <sapn>Испанский</sapn>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <sapn>Арабский</sapn>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <sapn>Другие</sapn>
+          </label>
+        </li>
+      </ul>
+      <ul style="width: 50%">
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <span>Webtrader</span>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <span>MetaTrader 5</span>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <span>Другие</span>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <span>USD</span>
+          </label>
+        </li>
+        <li>
+          <label class="filters__block-label">
+            <input type="checkbox" class="filters__block-checkbox">
+            <span class="filters__block-checkbox-fake"></span>
+            <span>EUR</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <h3 class="leave-comment__subtitle">Контакты</h3>
+    <textarea class="leave-comment__textarea" placeholder='здесь написаны данные компании'></textarea>
+    <div class="profile-form__text">После сохранения изменений, вам на указанную почту прийдет письмо с потдверждением нового e-mail адреса.</div>
+    <button class="button button--center button--red">Сохранить изменения</button>
+    <div class="profile-form__wrapper">
+      <button class="profile-form__link ">Отправить отзыв</button>
+    </div>
+  </form>
+  <!--                         contact-form                         -->
+  <form style="display: none;" id="review-form" class="leave-comment">
+    <h3 class="leave-comment__title">Новый отзыв</h3>
+    <div class="leave-comment__wrapper">
+      <input type="text" class="leave-comment__input leave-comment__input--100" placeholder="Ваше имя">
+      <input type="text" class="leave-comment__input leave-comment__input--100" placeholder="Ваша почта">
+    </div>
+    <textarea class="leave-comment__textarea" placeholder='Отзыв'></textarea>
+    <a href="" class="leave-comment__link">Прикрепить файл</a>
+    <ul class="leave-comment__rating-list">
+      <li class="leave-comment__rating-item">
+        <h4 class="leave-comment__rating-title">Уровень доверия</h4>
+        <div data-val='3' class="company-card__raiting changeable">
+          <span data-id='1' class="star star--yellow"></span>
+          <span data-id='2' class="star star--yellow"></span>
+          <span data-id='3' class="star star--yellow"></span>
+          <span data-id='4' class="star"></span>
+          <span data-id='5' class="star"></span>
+        </div>
+      </li>
+      <li class="leave-comment__rating-item">
+        <h4 class="leave-comment__rating-title">Быстрота вывода средств</h4>
+        <div data-val='3' class="company-card__raiting changeable">
+          <span data-id='1' class="star star--yellow"></span>
+          <span data-id='2' class="star star--yellow"></span>
+          <span data-id='3' class="star star--yellow"></span>
+          <span data-id='4' class="star"></span>
+          <span data-id='5' class="star"></span>
+        </div>
+      </li>
+      <li class="leave-comment__rating-item">
+        <h4 class="leave-comment__rating-title">Оперативность тех. поддержки</h4>
+        <div data-val='3' class="company-card__raiting changeable">
+          <span data-id='1' class="star star--yellow"></span>
+          <span data-id='2' class="star star--yellow"></span>
+          <span data-id='3' class="star star--yellow"></span>
+          <span data-id='4' class="star"></span>
+          <span data-id='5' class="star"></span>
+        </div>
+      </li>
+    </ul>
+    <div class="profile-form__text">После сохранения изменений, вам на указанную почту прийдет письмо с потдверждением нового e-mail адреса.</div>
+    <button class="button button--center button--red">Сохранить изменения</button>
+    <div class="profile-form__wrapper">
+      <button class="profile-form__link ">Отправить отзыв</button>
+    </div>
+  </form>
+    <!--                         contact-form                         -->
+  <form style="display: none;" id="authorisation-form" class="the-form">
+    <h2 class="the-form__title">Авторизация</h2>
+    <input type="text" class="the-form__input" placeholder="Логин или почта">
+    <div class="the-form__eye">
+      <input type="password" class="the-form__input the-form__input--pass" placeholder="Пароль">
+      <div class="eye"></div>
+    </div>
+    <button class="button button--center  button--red">Войти</button>
+    <div class="the-form__wrapper">
+      <button data-fancybox data-src="#restore-pass-form" href="javascript:;" class="the-form__link  close-the-form">Забыли пароль?</button>
+    </div>
+    <div class="the-form__line"></div>
+    <div class="the-form__wrapper">
+      <p class="the-form__text">Нет аккаунта? <button data-fancybox data-src="#registration-form" class="the-form__link  close-the-form">Зарегистрируйтесь</button></p>
+    </div>
+  </form>
+  <!--                         contact-form                         -->
+  <form style="display: none;" id="restore-pass-form" class="the-form">
+    <h2 class="the-form__title">Восстановление пароля</h2>
+    <input type="text" class="the-form__input" placeholder="Логин или почта">
+    <button class="button button--center  button--red">Отправить письмо</button>
+  </form>
+  <!--                         contact-form                         -->
+  <form style="display: none;" id="registration-form" class="the-form">
+    <h2 class="the-form__title">Регистрация</h2>
+    <input type="email" class="the-form__input" placeholder="Email">
+    <input type="text" class="the-form__input" placeholder="Логин">
+    <div class="the-form__eye">
+      <input type="password" class="the-form__input the-form__input--pass" placeholder="Пароль">
+      <div class="eye"></div>
+    </div>
+    <div class="the-form__eye">
+      <input type="password" class="the-form__input the-form__input--pass" placeholder="Повторить пароль">
+      <div class="eye"></div>
+    </div>
+    <input type="text" class="the-form__input" placeholder="Введите текст с изображения Captcha">
+    <button class="button button--center  button--red">Регистрация</button>
+  </form>
+  <!--                         contact-form                         -->
+    <form style="display: none;" id="email-sent-form" class="the-form">
+    <h2 class="the-form__title ">Письмо отправлено</h2>
+    <p style="text-align: center" class="the-form__text">Уважаемый пользователь, письмо с интсрукцией по восстановлению пароля успешно отправлено на указанный вами электронный адрес.</p>
+    <div class="the-form__confirmed"></div>
+  </form>
+  <!--                         contact-form                         -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
