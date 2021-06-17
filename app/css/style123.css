@@ -1216,6 +1216,10 @@ body.compensate-for-scrollbar {
   border: none;
 }
 
+.company-card__button {
+  display: none;
+}
+
 .company-card__closer {
   cursor: pointer;
   position: absolute;
@@ -3855,7 +3859,7 @@ input[type="range"]::-ms-fill-upper {
     height: 30px;
     background: url(../img/icons/scroll-min.svg);
     position: absolute;
-    bottom: 15px;
+    bottom: 45px;
     left: calc(50% - 20px);
   }
   .search-form__submit {
@@ -3935,6 +3939,9 @@ input[type="range"]::-ms-fill-upper {
   }
   .company-card__title {
     margin: 10px 0 10px;
+  }
+  .company-card__button {
+    display: block;
   }
   .company-card__logo svg {
     height: 100%;

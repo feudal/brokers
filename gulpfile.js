@@ -29,18 +29,18 @@ function images() {
         ]
       })
     ]))
-    .pipe(dest('dist/img'))
+    .pipe(dest('docs/img'))
 }
 
 function cleanDist() {
-    return del('dist');
+    return del('docs');
 }
 
 function scripts() {
   return src([
-      'node_modules/jquery/dist/jquery.js',
+      'node_modules/jquery/docs/jquery.js',
       'node_modules/slick-carousel/slick/slick.js',
-      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+      'node_modules/@fancyapps/fancybox/docs/jquery.fancybox.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -76,7 +76,7 @@ function build() {
       'app/js/*.js',
       'app/*.html'
     ], { base: 'app' })
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
 }
 
 function watching() {

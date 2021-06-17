@@ -342,6 +342,28 @@
   }
 }
 
+
+@media only screen and (max-width: 640px) {
+
+  .investition__list,
+  .kpk__list,
+  .broker__list {
+    & .company-card {
+      margin-right: 0;
+
+      &__title {
+        margin: 20px 0 20px;
+      }
+
+      &__logo {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
 /*****--------------------main-screen-----------------*****/
 
 @media only screen and (max-width: 1024px) {
@@ -538,6 +560,7 @@
     &__title {
       margin: 10px 0 10px;
     }
+
     &__button {
       display: block;
     }
