@@ -249,6 +249,7 @@
 /*****--------------------footer-----------------***/
 
 /*****--------------------sliders-index-----------------*****/
+
 .investition__list,
 .kpk__list,
 .broker__list {
@@ -259,7 +260,6 @@
   & .slick-list {
     margin: 0 -10px 0;
   }
-
 
   & .slick-arrow {
     cursor: pointer;
@@ -345,11 +345,13 @@
 
 @media only screen and (max-width: 640px) {
 
+  .recomendation__slider,
   .investition__list,
   .kpk__list,
   .broker__list {
     & .company-card {
       margin-right: 0;
+      padding: 10px;
 
       &__title {
         margin: 20px 0 20px;
@@ -358,6 +360,10 @@
       &__logo {
         max-height: 100%;
         max-width: 100%;
+        & svg {
+          height: 150px;
+        }
+
       }
     }
   }
